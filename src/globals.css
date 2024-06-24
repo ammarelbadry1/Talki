@@ -1,0 +1,59 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+#root {
+  --primary-clr: #377DFF;
+  --primary-light-clr: #E5F1FF;
+  --font-clr: #243443;
+  --placeholder-clr: #AAB0B7;
+  --border-clr: #AAB0B7;
+  --icon-clr: #AAB0B7;
+  --font-dimmed-clr: #58616A;
+  --separator-clr: #58616A;
+  --background-clr: #FFFFFF;
+  --contrast-background-clr: #F7F7F9;
+  --available: #2DCA8C;
+
+  --danger: #D32F2F;
+  --light-danger: #FECDD3;
+  --warning: #FBC02D;
+  --light-warning: #FFF2C6;
+  --success: #388E3C;
+  --light-success: #BBF7D0;
+
+  background-color: var(--background-clr);
+  color: var(--font-clr);
+  transition: background-color 0.2s ease;
+  font-family: 'Inter', 'Segoe UI', 'Tahoma';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root.dark {
+
+}
+
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+::-webkit-scrollbar-track, ::-webkit-scrollbar-corner  {
+        background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+        background-color: #808080;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+        background-color: var(--font);
+}
+
+code {
+  font-family: 'Consolas', 'Courier New';
+}
