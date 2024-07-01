@@ -5,7 +5,12 @@ import { FcGoogle } from 'react-icons/fc';
 
 export const Signup = () => {
   const {
-    button,
+    signupBtn,
+    formInput,
+    label,
+    separatorTxt,
+    separator,
+    btn,
     form,
     main,
     page
@@ -20,38 +25,58 @@ export const Signup = () => {
           alt='Logo'
         />
         <form className={form}>
-          <button className={button}>
-            <FcGoogle />
+          <button
+            className={btn}
+            title='Currently Disabled'
+            onClick={(e) => e.preventDefault()}
+          >
+            <FcGoogle
+              style={{
+                fontSize: '1.5rem'
+              }}
+            />
             Sign up with Google
           </button>
+          <div>
+            <span className={separator}></span>
+            <span className={separatorTxt}> or </span>
+            <span className={separator}></span>
+          </div>
           <label>
-            <span>Email</span>
+            <span className={label}>Email</span>
             <input
               type='text'
-              value=''
+              className={formInput}
               name='email'
               placeholder='JohnDoe@gmail.com'
             />
           </label>
           <label>
-            <span>Username</span>
+            <span className={label}>Username</span>
             <input
               type='text'
+              className={formInput}
               value=''
               name='username'
               placeholder='johndoe20'
             />
           </label>
           <label>
-            <span>Password</span>
+            <span className={label}>Password</span>
             <input
               type='password'
+              className={formInput}
               value=''
               name='password'
-              placeholder='********'
+              placeholder='••••••••'
             />
           </label>
-          <div>separator</div>
+          <button
+            className={signupBtn}
+            onClick={(e) => e.preventDefault()}
+          >
+            Sign up
+          </button>
         </form>
         <div>
           <span>Have an account? </span>
