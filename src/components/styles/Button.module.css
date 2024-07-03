@@ -1,0 +1,23 @@
+.btn {
+  background-color: var(--primary-clr);
+  color: var(--background-clr);
+  border: none;
+  border-radius: 8px;
+  width: 319px;
+  padding: 20px;
+  margin-top: 40px;
+  cursor: pointer;
+  font-size: 1.05rem;
+  text-align: center;
+  box-shadow: 0 2px 2px 0 var(--shadow-clr);
+  transition: all 0.2s ease;
+}
+
+.btn:hover {
+  background-color: var(--primary-dark-clr);
+}
+
+.btn:focus {
+  box-shadow: initial;
+  transform: translateY(2px);
+}

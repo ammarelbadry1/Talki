@@ -1,0 +1,20 @@
+.input {
+  background-color: var(--contrast-background-clr);
+  outline: 2px solid transparent;
+  border: 1px solid var(--border-clr);
+  border-radius: 8px;
+  width: 300px;
+  height: 60px;
+  padding: 18px 20px 19px 20px;
+  font-size: 1.05rem;
+  transition: all 0.2s ease;
+}
+
+.focused {
+  background-color: var(--background-clr);
+  outline-color: var(--primary-clr);
+}
+
+.hovered {
+  border-color: var(--primary-clr);
+}

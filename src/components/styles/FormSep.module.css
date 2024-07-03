@@ -1,0 +1,12 @@
+.line {
+  display: inline-block;
+  border: 1px solid var(--separator-clr);
+  width: 100px;
+  vertical-align: middle;
+}
+
+.txt {
+  display: inline-block;
+  width: 50px;
+  text-align: center;
+}

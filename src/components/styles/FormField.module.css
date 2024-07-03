@@ -1,0 +1,10 @@
+.label {
+  display:block;
+  margin-left: 7px;
+  font-size: 1.1rem;
+  transition: color 0.2s ease;
+}
+
+.focused, .hovered {
+  color: var(--primary-clr);
+}
